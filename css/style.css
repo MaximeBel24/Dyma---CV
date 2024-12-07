@@ -52,6 +52,14 @@ img {
   color: var(--hint);
 }
 
+.mb-5 {
+  margin-bottom: 5rem !important;
+}
+
+.mb-2 {
+  margin-bottom: 2rem !important;
+}
+
 .grid-container {
   display: grid;
   min-height: 100vh;
@@ -163,6 +171,33 @@ main h2 {
 main p {
   letter-spacing: 0.1rem;
   line-height: 3rem;
+}
+main .experience {
+  display: flex;
+  margin: 6rem 0;
+}
+main .experience .timeline {
+  text-align: center;
+  color: var(--hint);
+  padding-right: 2rem;
+  border-right: 1px solid var(--border);
+}
+main .experience .timeline p {
+  margin: 0;
+}
+main .experience .content {
+  padding: 0 1rem;
+}
+main .experience .content h3 {
+  margin: 0;
+}
+main .experience .content p {
+  margin: 0;
+}
+main .experience .content ul {
+  margin: 2rem 0;
+  list-style: circle;
+  padding-left: 4rem;
 }
 
 /*# sourceMappingURL=style.css.map */
