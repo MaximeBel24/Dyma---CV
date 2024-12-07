@@ -40,6 +40,11 @@ img {
   box-sizing: border-box;
 }
 
+.title-small {
+  letter-spacing: 0.5rem;
+  font-size: 1.7rem;
+}
+
 .grid-container {
   display: grid;
   min-height: 100vh;
@@ -78,6 +83,20 @@ header p {
 
 aside {
   grid-area: aside;
+  background: var(--background);
+  border-right: 1px solid var(--border);
+  padding: 5rem;
+}
+aside .block {
+  margin-bottom: 5rem;
+}
+aside .block h3 {
+  margin-bottom: 0;
+  font-size: 1.4rem;
+}
+aside .block p {
+  margin: 0 0 2rem 0;
+  font-style: italic;
 }
 
 main {
