@@ -85,6 +85,11 @@ img {
   min-height: 100vh;
   grid: "picture header" auto "aside main" 1fr "footer footer" auto/350px auto;
 }
+@media (max-width: 480px) {
+  .grid-container {
+    grid: "header" auto "main" auto "picture" auto "aside" auto "footer" auto/auto;
+  }
+}
 
 header {
   grid-area: header;
@@ -97,11 +102,21 @@ header {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 480px) {
+  header {
+    padding: 5rem 2rem;
+  }
+}
 header h1 {
   font-size: 6rem;
   line-height: 8rem;
   font-weight: 300;
   letter-spacing: 3rem;
+}
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 4rem;
+  }
 }
 header p {
   letter-spacing: 0.5rem;
@@ -115,6 +130,7 @@ header span {
   grid-area: picture;
   padding: 6rem;
   background: var(--background);
+  border-right: 1px solid var(--border);
 }
 .picture img {
   border-radius: 50%;
@@ -200,6 +216,11 @@ main {
   grid-area: main;
   padding: 5rem;
 }
+@media (max-width: 480px) {
+  main {
+    padding: 5rem 1.5rem;
+  }
+}
 main h2 {
   margin-bottom: 4rem;
 }
@@ -246,6 +267,11 @@ footer {
   padding: 5rem;
   background: var(--text);
 }
+@media (max-width: 480px) {
+  footer {
+    padding: 5rem 1.5rem;
+  }
+}
 footer h2 {
   margin-bottom: 3rem;
 }
@@ -282,6 +308,11 @@ footer form input {
   min-width: 400px;
   padding: 1rem 2rem;
   line-height: 2rem;
+}
+@media (max-width: 480px) {
+  footer form input {
+    min-width: 200px;
+  }
 }
 footer form input::placeholder {
   color: var(--text);
